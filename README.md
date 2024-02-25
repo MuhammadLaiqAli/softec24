@@ -1,8 +1,8 @@
-# Sovanza Web Platform
+# Sovanza Tours
 
 > Cutting-edge solutions tailor-made for your business needs.
 
-![Sovanza Logo](https://via.placeholder.com/800x400?text=Sovanza+Web+Platform)
+![Sovanza Logo](https://sovanza.com/wp-content/uploads/2023/10/sovanza-logo-e1696975803757.png)
 
 ## About The Project
 
