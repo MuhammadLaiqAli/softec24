@@ -13,9 +13,9 @@ The Sovanza Web Platform is a Laravel-based application designed to provide robu
 This project is built with the following technologies:
 
 - [Laravel](https://laravel.com)
-- [Bootstrap](https://getbootstrap.com/) or another front-end framework
-- [jQuery](https://jquery.com) (if used)
-- [MySQL](https://www.mysql.com/) or another database system
+- [Bootstrap](https://getbootstrap.com/)
+- [jQuery](https://jquery.com)
+- [MySQL](https://www.mysql.com/)
 
 ## Getting Started
 
