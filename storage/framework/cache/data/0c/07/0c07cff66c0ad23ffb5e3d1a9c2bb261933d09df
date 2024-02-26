@@ -1,0 +1,72 @@
+9999999999s:2676:"<script type="text/javascript">
+function addGoogleTranslateWidget() {
+    var translateButton = document.createElement('button');
+    translateButton.classList.add('translate-button');
+    translateButton.innerHTML = '&#x1F30E;';
+    translateButton.onclick = function() {
+        var googleTranslateElement = document.createElement('div');
+        googleTranslateElement.id = 'google_translate_element';
+        googleTranslateElement.style.position = 'fixed';
+        googleTranslateElement.style.bottom = '100px';
+        googleTranslateElement.style.right = '20px';
+        googleTranslateElement.style.zIndex = '9999999';
+        googleTranslateElement.style.backgroundColor = '#fff';
+        googleTranslateElement.style.borderRadius = '10px';
+        googleTranslateElement.style.padding = '20px';
+        googleTranslateElement.style.boxShadow = '0px 0px 20px rgba(0, 0, 0, 0.2)';
+        document.body.appendChild(googleTranslateElement);
+
+        var script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.src = 'https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+        document.body.appendChild(script);
+    };
+    document.body.appendChild(translateButton);
+
+    var style = document.createElement('style');
+    style.innerHTML = `
+  .translate-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px; /* Changed from right to left */
+    z-index: 9999999;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 50%;
+    color: white;
+    padding: 15px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+.translate-button:hover {
+    background-color: #45a049;
+}
+    `;
+    document.head.appendChild(style);
+}
+
+function googleTranslateElementInit() {
+    new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        includedLanguages: 'ur,ar,de,es,fr,ja,ko,zh-CN',
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+        disableTopOffset: true // Disable top bar
+    }, 'google_translate_element');
+}
+
+document.addEventListener('DOMContentLoaded', addGoogleTranslateWidget);
+</script>
+
+<script type="text/javascript">
+      window.COGNIFLOW_APPLICATION_ID = '29b022e0-bc69-40df-aa7d-24019508f6e6';
+      (function () {
+        d = document;
+        s = d.createElement('script');
+        s.src = 'https://s3.us-east-2.amazonaws.com/static-cogniflow-prod/widget/chat.js';
+         s.async = 1;
+        d.getElementsByTagName('head')[0].appendChild(s);
+      })();
+    </script>";
